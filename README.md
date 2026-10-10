@@ -1,4 +1,4 @@
-# RNA-MLP · Do dado bruto à avaliação
+# Rede Neural MLP com Dados Sintéticos
 
 Um experimento com redes neurais para dados tabulares, cobrindo o caminho completo: tratar a base, separar treino e teste, comparar modelos e interpretar os resultados.
 
