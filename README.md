@@ -1,4 +1,4 @@
-# Rede Neural MLP com Dados Sintéticos
+# Previsão de regiões com MLP
 
 Um experimento com redes neurais para dados tabulares, cobrindo o caminho completo: tratar a base, separar treino e teste, comparar modelos e interpretar os resultados.
 
