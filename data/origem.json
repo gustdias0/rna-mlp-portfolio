@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "generator": "gerar_dados.py",
+  "seed": 101,
+  "rows": 7979,
+  "municipalities": 500
+}

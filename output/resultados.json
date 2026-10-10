@@ -1,0 +1,125 @@
+{
+  "dataset": "sintetico",
+  "seed": 101,
+  "n": 7979,
+  "excluded": 0,
+  "missing": {
+    "Região": 0,
+    "Uf": 0,
+    "IBGE": 0,
+    "Municipio": 0,
+    "CNES": 0,
+    "Tipo Unidade": 2816,
+    "INE": 789,
+    "Tipo Equipe": 3216,
+    "Validação": 0,
+    "Total": 0
+  },
+  "splits": {
+    "treino": {
+      "rows": 4803,
+      "municipalities": 300
+    },
+    "validacao": {
+      "rows": 1577,
+      "municipalities": 100
+    },
+    "teste": {
+      "rows": 1599,
+      "municipalities": 100
+    }
+  },
+  "classes": {
+    "NORDESTE": 2859,
+    "SUDESTE": 2075,
+    "SUL": 1114,
+    "NORTE": 1021,
+    "CENTRO_OESTE": 910
+  },
+  "total": {
+    "min": 1,
+    "max": 8180,
+    "median": 61.0,
+    "mean": 143.56698834440405,
+    "q1": 25.0,
+    "q3": 147.0,
+    "threshold": 330.0,
+    "outliers": 770
+  },
+  "experiments": [
+    {
+      "id": 1,
+      "layers": [
+        100,
+        100
+      ],
+      "epochs": 10,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs_run": 10,
+      "best_epoch": 7,
+      "validation_mse": 0.06543917208909988
+    },
+    {
+      "id": 2,
+      "layers": [
+        64,
+        32
+      ],
+      "epochs": 80,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs_run": 80,
+      "best_epoch": 80,
+      "validation_mse": 0.04085822030901909
+    },
+    {
+      "id": 3,
+      "layers": [
+        100,
+        100
+      ],
+      "epochs": 100,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs_run": 100,
+      "best_epoch": 99,
+      "validation_mse": 0.03553681820631027
+    }
+  ],
+  "selected": 3,
+  "metrics": {
+    "MSE": {
+      "estimativa": 0.030188441276550293,
+      "ic95_inferior": 0.023736779950559138,
+      "ic95_superior": 0.037240992113947866
+    },
+    "MAE": {
+      "estimativa": 0.127541184425354,
+      "ic95_inferior": 0.10729786474257708,
+      "ic95_superior": 0.1489284612238407
+    },
+    "R2": {
+      "estimativa": 0.9813997149467468,
+      "ic95_inferior": 0.9755362823605538,
+      "ic95_superior": 0.9854812264442444
+    },
+    "EVS": {
+      "estimativa": 0.9814018607139587,
+      "ic95_inferior": 0.9757549419999123,
+      "ic95_superior": 0.9857278749346733
+    }
+  },
+  "accuracy": 0.9987492182614134,
+  "baseline_mse": 1.6264208555221558,
+  "unknown": {
+    "Uf": 0,
+    "Municipio": 1599,
+    "Tipounidade": 0,
+    "Tipoequipe": 0,
+    "Validacao": 0
+  },
+  "unseen_states": {},
+  "known_states_mse": 0.030188441276550293,
+  "bootstrap_repetitions": 1000
+}
